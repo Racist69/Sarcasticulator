@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarcasticulator</title>
+    <!-- <style>h1{color: chocolate;font-size: 10px;}</style> -->
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+    <div id="calci">
+        <div id="display">
+            <input type="text" id="answer" readonly>
+        </div>
+        <div class="row">
+            <button id="clear" onclick="clearall()">C</button>
+            <button onclick="perc()">%</button>
+            <button onclick="update('**')">^</button>
+            <button onclick="update('/')">/</button>
+        </div>
+        <div class="row">
+            <button onclick="update('7')">7</button>
+            <button onclick="update('8')">8</button>
+            <button onclick="update('9')">9</button>
+            <button onclick="update('*')">*</button>
+        </div>
+        <div class="row">
+            <button onclick="update('4')">4</button>
+            <button onclick="update('5')">5</button>
+            <button onclick="update('6')">6</button>
+            <button onclick="update('-')">-</button>
+        </div>
+        <div class="row">
+            <button onclick="update('1')">1</button>
+            <button onclick="update('2')">2</button>
+            <button onclick="update('3')">3</button>
+            <button onclick="update('+')">+</button>
+        </div>
+        <div class="row" id="last-row">
+            <button id="zero" onclick="update('0')">0</button>
+            <button onclick="update('.')">.</button>
+            <button id="equals" onclick="result()">=</button>
+        </div>
+    </div>
+        
+    </body>
+</html>
